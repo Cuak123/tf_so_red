@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obelisk</title>
+    <link rel="stylesheet" href="../static/css/posts.css">
+    <link rel="stylesheet" href="../static/css/universal-stylesheet.css">
+    <link rel="icon" href="../static/images/upc-logo-red.webp" type="image/webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../static/images/tiau-logo_svg.svg" alt="tiau-logo">
+        </div>
+    </header>
+    <div class="content-container">
+        <div class="banner">
+            <img src="../static/images/fondo.png" alt="banner-img">
+        </div>
+        <div class="pfp-name">
+            <div class="pfp">
+                <img src="../static/images/bruce.png" alt="profile picture">
+            </div>
+            <div class="name">
+                <p>Bruce Fleck</p>
+            </div>
+        </div>
+
+
+
+        <div class="feed">
+            <div class="post-container" id="post">
+                <h1>Bienvenido</h1>
+
+                <!-- Display existing posts -->
+                {% for post in posts %}
+                <div class="post">
+                    <h2>{{ post.titulo }}</h2>
+                    <h4>{{post._id}}</h4>
+                    <p>{{ post.contenido }}</p>
+                    
+                </div>
+                
+                {% endfor %}
+                <div id="comentario">
+                    <form action="/crear_comentario" method="post">
+                        <label for="comentario">Comentario</label>
+                        <input type="text" name="comentario" id="comentario" required placeholder="Comenta">
+                        <input type="submit" value="Comentar">
+                    </form>
+                </div>
+                <form action="ver_comentarios">
+                    <input type="submit" value="Ver comentarios">
+                </form>
+    
+            </div>
+            <form action="regresar">
+                <input type="submit" value="Regresar">
+            </form>
+
+
+        </div>
+    </div>
+
+    </div>
+</body>
+
+</html>
