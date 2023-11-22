@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="../images/upc-logo-red.webp" type="image/webp">
+    <link rel="stylesheet" href="../static/css/registro-stylesheet.css">
+    <link rel="stylesheet" href="../static/css/universal-stylesheet.css">
+    <title>TiAU Registro</title>
+</head>
+<body>
+    <div class="filler">
+        <div class="tiau-logo">
+            <img src="..\static\images\tiau-logo_svg.svg" alt="tiau-logo">
+        </div>
+        <div class="colors-filler">
+            <div class="yellow-filler"></div>
+            <div class="orange-filler"></div>
+            <div class="pink-filler"></div>
+        </div>
+    </div>
+    <div class="info-input-container">
+        <div class="input-box">
+            <div class="welcome-msg">
+                <b>Bienvenido a TiAU!</b>
+            </div>
+            <div class="input-field">
+                <b>Crear una cuenta nueva</b>
+                <form action="/procesar_registro">
+                    <div class="input-name INF">
+                        <label for="input-nombre">Nombre</label>
+                        <br>
+                        <input class="input-primary" type="text" name="input-nombre" id="input-nombre" placeholder="Tu primer nombre">
+                    </div>
+                    <div class="input-email INF">
+                        <label for="input-correo">Correo electronico</label>
+                        <br>
+                        <input class="input-primary" type="email" name="input-correo" id="input-correo" placeholder="ejemplo@email.com">
+                    </div>
+                    <div class="input-password INF">
+                        <label for="input-contrasenia">Contrasenia</label>
+                        <br>
+                        <input class="input-primary" type="password" name="input-contrasenia" id="input-contrasenia" placeholder="Contrasenia">
+                    </div>
+                    <input class="button-primary login-button" type="submit" value="Registrarse!">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

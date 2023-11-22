@@ -1,0 +1,79 @@
+body {
+    margin: 0px;
+    display: flex;
+
+}
+
+.filler {
+    background-color: #2A29B3;
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+}
+
+.colors-filler {
+    height: 100vh;
+    width: 5rem;
+}
+
+.yellow-filler {
+    margin-top: 5rem;
+    width: 100%;
+    height: 5rem;
+    background-color: #FFB100;
+}
+
+.orange-filler {
+    width: 100%;
+    height: 5rem;
+    background-color: #FF4B00;
+}
+
+.pink-filler {
+    width: 100%;
+    height: 5rem;
+    background-color: #FE6EB4;
+}
+
+.info-input-container {
+    width: 100%;
+}
+
+.input-box {
+    margin-left: 10%;
+    margin-right: 30%;
+    margin-top: 8rem;
+    border-radius: 4px;
+    box-shadow: 15px 15px 25px 20px rgb(220, 218, 218);
+    padding: 2rem;
+}
+
+.welcome-msg b {
+    font-size: 2.5rem;
+}
+
+.input-field {
+    margin-top: 2rem;
+}
+
+.INF {
+    margin-top: 1rem;
+}
+.INF input {
+    margin-top: 0.5rem;
+    padding: 1rem 1.5rem;
+    width: 90%;
+}
+.login-button {
+    margin-top: 1.5rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    font-weight: bolder;
+}
+
+.tiau-logo {
+    margin-top: 5rem;
+    height: 15rem;
+    width: 20rem;
+}

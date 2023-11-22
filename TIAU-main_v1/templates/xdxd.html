@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+ <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+            <h1>Comentarios</h1>
+
+            
+            <ul>
+                {% for comentario in comentarios %}
+                <li>{{ comentario.comentario }}</li>
+                {% endfor %}
+            </ul>
+        
+
+            <form action="/regresar" method="get">
+                <input type="submit" value="Regresar">
+            </form>
+</body>
+</div>
+</div>
+</body>
+
+</html>

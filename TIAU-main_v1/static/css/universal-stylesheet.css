@@ -1,0 +1,20 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: rgb(30, 51, 51);
+    background-color: whitesmoke;
+}
+
+.button-primary {
+    background-color: #2A29B3;
+    color: whitesmoke;
+    padding: 1rem 1.5rem;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+}
+.button-primary:hover {
+    background-color: #4c4cb3;
+    cursor: pointer;
+}

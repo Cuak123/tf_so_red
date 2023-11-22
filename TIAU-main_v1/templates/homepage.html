@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obelisk</title>
+    <link rel="stylesheet" href="../static/css/homepage-stylesheet.css">
+    <link rel="stylesheet" href="../static/css/universal-stylesheet.css">
+    <link rel="icon" href="../static/images/upc-logo-red.webp" type="image\webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="..\static\images\tiau-logo_svg.svg" alt="tiau-logo">
+        </div>
+    </header>
+    <div class="content-container">
+        <div class="banner">
+            <img src="..\static\images\fondo.png" alt="banner-img">
+        </div>
+        <div class="pfp-name">
+            <div class="pfp">
+                <img src="..\static\images\bruce.png" alt="profile picture">
+            </div>
+            <div class="name">
+                <p>Bruce Fleck</p>
+            </div>
+        </div>
+        <div class="feed">
+            <div class="post-container" id="post">
+                <h1>Bienvenido</h1>
+                <section id="make_post">
+                    <h2>Escribe tu post</h2>
+                    <form action="/crear_post" method="post" enctype="multipart/form-data">
+                        <label for="titulo">Titulo</label>
+                        <input type="text" name="titulo" id="titulo" required placeholder="Titulo">
+                        <br>
+                        <label for="contenido">Contenido</label>
+                        <textarea name="contenido" id="contenido" cols="30" rows="10"
+                            placeholder="Contenido"></textarea>
+                        <br>
+                        <label for="image">Selecciona una imagen:</label>
+                        <input type="file" id="image" name="image" accept="image/*">
+                        <br>
+                        <input type="submit" value="Postear">
+                    </form>
+                </section>
+                
+            </div>
+            <div>
+                <form action="mostrar_posts">
+                    <input type="submit" value = "Ver publicaciones">
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    
+
+</body>
+
+</html>

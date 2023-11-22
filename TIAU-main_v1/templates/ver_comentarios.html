@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obelisk</title>
+    <link rel="stylesheet" href="../static/css/posts.css">
+    <link rel="stylesheet" href="../static/css/universal-stylesheet.css">
+    <link rel="icon" href="../static/images/upc-logo-red.webp" type="image/webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../static/images/tiau-logo_svg.svg" alt="tiau-logo">
+        </div>
+    </header>
+    <div class="content-container">
+        <div class="banner">
+            <img src="../static/images/fondo.png" alt="banner-img">
+        </div>
+        <div class="pfp-name">
+            <div class="pfp">
+                <img src="../static/images/bruce.png" alt="profile picture">
+            </div>
+            <div class="name">
+                <p>Bruce Fleck</p>
+            </div>
+        </div>
+
+        <div class="feed">
+            <h1>Comentarios</h1>
+
+            
+            <ul>
+                {% for comentario in comentarios %}
+                <li>{{ comentario.comentario }}</li>
+                {% endfor %}
+            </ul>
+        
+
+            <form action="/regresar" method="get">
+                <input type="submit" value="Regresar">
+            </form>
+</body>
+</div>
+</div>
+</body>
+
+</html>
